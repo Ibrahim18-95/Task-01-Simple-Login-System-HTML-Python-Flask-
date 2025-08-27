@@ -11,5 +11,5 @@ def Submit():
     Username = request.form.get("username")
     Password = request.form.get("password")
     
-    if Username == "Ibrahim" and Password == "ibr123":
+    if Username == "admin" and Password == "12345":
         return render_template("Welcome.html", name = Username)
