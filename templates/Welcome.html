@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #ff4c4c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #ff1a1a;
+        }
+    </style>
 </head>
 <body>
-    <h2>Sucessfully login {{name}}</h2>
+    <h1>Welcome, {{ name }}!</h1>
+    <p>You have successfully logged in.</p>
+    <a href="/logout" class="btn">Logout</a>
 </body>
 </html>
